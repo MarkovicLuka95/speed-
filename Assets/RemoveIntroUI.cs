@@ -16,7 +16,7 @@ public class RemoveIntroUI : MonoBehaviour
     void Update()
     {
         var sanityManager = GameObject.FindGameObjectsWithTag("SanityManager")[0];
-        sanityManager.GetComponent<sanity>().value = 1;
+        //sanityManager.GetComponent<sanity>().value = 1;
         if (GetComponent<PlayableDirector>().state != PlayState.Playing)
 		{
 			Destroy(transform.parent.gameObject);
